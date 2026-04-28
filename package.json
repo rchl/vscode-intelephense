@@ -868,9 +868,9 @@
                         }
                     },
                     "default": {
-                        "summary": "$1",
+                        "summary": "\\$1",
                         "tags": [
-                            "@package ${1:$SYMBOL_NAMESPACE}"
+                            "@package \\${1:\\$SYMBOL_NAMESPACE}"
                         ]
                     },
                     "markdownDescription": "An object that describes the format of generated class/interface/trait phpdoc. The following snippet variables are available: SYMBOL_NAME; SYMBOL_KIND; SYMBOL_TYPE; SYMBOL_NAMESPACE.",
@@ -896,9 +896,9 @@
                         }
                     },
                     "default": {
-                        "summary": "$1",
+                        "summary": "\\$1",
                         "tags": [
-                            "@var ${1:$SYMBOL_TYPE}"
+                            "@var \\${1:\\$SYMBOL_TYPE}"
                         ]
                     },
                     "markdownDescription": "An object that describes the format of generated property phpdoc. The following snippet variables are available: SYMBOL_NAME; SYMBOL_KIND; SYMBOL_TYPE; SYMBOL_NAMESPACE.",
@@ -924,11 +924,11 @@
                         }
                     },
                     "default": {
-                        "summary": "$1",
+                        "summary": "\\$1",
                         "tags": [
-                            "@param ${1:$SYMBOL_TYPE} $SYMBOL_NAME $2",
-                            "@return ${1:$SYMBOL_TYPE} $2",
-                            "@throws ${1:$SYMBOL_TYPE} $2"
+                            "@param \\${1:\\$SYMBOL_TYPE} \\$SYMBOL_NAME \\$2",
+                            "@return \\${1:\\$SYMBOL_TYPE} \\$2",
+                            "@throws \\${1:\\$SYMBOL_TYPE} \\$2"
                         ]
                     },
                     "markdownDescription": "An object that describes the format of generated function/method phpdoc. The following snippet variables are available: SYMBOL_NAME; SYMBOL_KIND; SYMBOL_TYPE; SYMBOL_NAMESPACE.",
